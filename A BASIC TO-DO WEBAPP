@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .pending {
+            color: #333;
+        }
+
+        .completed-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>To-Do App</h1>
+    <input type="text" id="taskInput" placeholder="Add new task...">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="pendingList">
+        <!-- Tasks will be added here -->
+    </ul>
+
+    <div class="completed-list">
+        <h2>Completed Tasks</h2>
+        <ul id="completedList">
+            <!-- Completed tasks will be added here -->
+        </ul>
+    </div>
+
+    <script>
+        function addTask() {
+            const taskInput = document.getElementById("taskInput");
+            const taskText = taskInput.value.trim();
+
+            if (taskText !== "") {
+                const li = document.createElement("li");
+                li.innerHTML = `
+                    <span class="task-text pending">${taskText}</span>
+                    <button onclick="markAsComplete(this)">Complete</button>
+                    <button onclick="deleteTask(this)">Delete</button>
+                `;
+                document.getElementById("pendingList").appendChild(li);
+                taskInput.value = "";
+            }
+        }
+
+        function markAsComplete(button) {
+            const li = button.parentNode;
+            const taskText = li.querySelector(".task-text");
+            taskText.classList.remove("pending");
+            taskText.classList.add("completed");
+            button.innerText = "Delete";
+            button.onclick = function() {
+                deleteTask(li);
+            };
+            document.getElementById("completedList").appendChild(li);
+        }
+
+        function deleteTask(item) {
+            item.remove();
+        }
+    </script>
+</body>
+
+</html>
