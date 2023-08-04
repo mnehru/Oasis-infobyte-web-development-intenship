@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .image-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .admirations {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 20px;
+            color: #777;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Elon Musk</h1>
+    </header>
+
+    <div class="admirations">
+        <div class="image-section">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FElon_Musk&psig=AOvVaw2xBF2ZjZc6wj2_45nO_HHW&ust=1691228252336000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMDIo6HawoADFQAAAAAdAAAAABAE" alt="Image of [Name]">
+        </div>
+
+        <p>
+           Elon Reeve Musk is a business magnate and investor. He is the founder, chairman, CEO and chief technology officer of SpaceX; angel investor, CEO and product architect of Tesla, Inc.; owner and CTO of Twitter; founder of the Boring Company; co-founder of Neuralink and OpenAI; and president of the Musk Foundation. Musk is the wealthiest person in the world with an estimated net worth of US$239 billion as of July 2023, according to the Bloomberg Billionaires Index, and $248.8 billion according to Forbes's Real Time Billionaires list, primarily from his ownership stakes in Tesla and SpaceX.
+        </p>
+
+        <p>
+           In 2002, eBay acquired PayPal for $1.5 billion, and that same year, with $100 million of the money he made, Musk founded SpaceX, a spaceflight services company. In 2004, he was an early investor in the electric vehicle manufacturer Tesla Motors, Inc. (now Tesla, Inc.). He became its chairman and product architect, assuming the position of CEO in 2008. In 2006, he helped create SolarCity, a solar energy company that was acquired by Tesla in 2016 and became Tesla Energy
+        </p>
+
+        <p>
+            I am constantly amazed by their ability to consistancy. Their dedication to
+            passion is truly admirable, and I strive to follow in their footsteps.
+        </p>
+
+        <div class="quote">
+            " [I think it’s possible for ordinary people to choose to be extraordinary.”]"
+        </div>
+    </div>
+
+    <footer>
+        &copy; [2023] Jawaharlalnehru
+    </footer>
+</body>
+
+</html>
